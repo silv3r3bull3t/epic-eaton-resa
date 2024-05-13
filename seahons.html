@@ -6,8 +6,34 @@
   <link rel="shortcut icon" href="honsie.ico" />
   <meta charset="utf-8">
   <title>seahorse serenity</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
-    div {
+    
+
+    body {
+      font-family: "Great Vibes";
+      display: grid;
+      grid-template-columns: 132.9px 2.5fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 30px 35px;
+      grid-template-areas:
+        "heder heder"
+        "mav main"
+        "foot foot";
+    }
+
+    header {
+      grid-area: heder;
+      margin: 10px
+    }
+
+    footer {
+      grid-area: foot;
+      margin: 200px;
+    }
+
+    nav {
+      grid-area: mav;
       background: paleturquoise;
       width: 200px;
       height: 100px;
@@ -18,11 +44,20 @@
       padding: 37px;
     }
 
-    body {
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    article {
+      grid-area: main;
     }
 
-    a:hover {
+    ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    footer ul{
+      display: flex;
+    }
+    nav a:hover {
       color: black;
       text-decoration: solid;
       font-size: 20px;
@@ -98,5 +133,7 @@
 
 
 </body>
+
+</html>
 
 </html>
